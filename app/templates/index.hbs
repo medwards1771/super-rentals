@@ -2,11 +2,12 @@
 
 <p>We hope you find exactly what you're looking for in a place to stay.</p>
 
-{{#each model as |rentalUnit|}}
-  {{rental-listing rental=rentalUnit}}
-{{/each}}
-
-{{#link-to "about"}}About{{/link-to}}
-{{#link-to "contact"}}Click here to contact us.{{/link-to}}
+<div class="container">
+  <div class="row">
+    {{#each model as |rentalUnit|}}
+      <div class="col-md-4">{{rental-listing rental=rentalUnit}}</div>
+    {{/each}}
+  </div>
+</div>
 
 {{outlet}}
