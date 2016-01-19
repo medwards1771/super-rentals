@@ -2,6 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'img-src': "*.wikimedia.org"
+    },
+
     modulePrefix: 'super-rentals',
     environment: environment,
     baseURL: '/',
