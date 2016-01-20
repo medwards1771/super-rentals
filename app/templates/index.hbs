@@ -2,6 +2,11 @@
 
 <p>We hope you find exactly what you're looking for in a place to stay.</p>
 
+<p>
+  {{#link-to "rentals.new"}}Add a New Rental{{/link-to}}
+</p>
+
+<p>
 <div class="container">
   <div class="row">
     {{#each model as |rentalUnit|}}
@@ -9,5 +14,8 @@
     {{/each}}
   </div>
 </div>
+</p>
+
+
 
 {{outlet}}

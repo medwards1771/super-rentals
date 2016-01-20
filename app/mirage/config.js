@@ -1,4 +1,12 @@
 export default function() {
+  this.post('/rentals', function() {
+    return {
+    data: {
+      type: 'rentals'
+    }
+  };
+  }
+    );
   this.get('/rentals', function() {
     return {
       data: [{
