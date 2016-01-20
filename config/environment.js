@@ -3,11 +3,13 @@
 module.exports = function(environment) {
   var ENV = {
     contentSecurityPolicy: {
-      'img-src': "*.wikimedia.org"
+      'img-src': "*.wikimedia.org",
+      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com"
     },
 
     modulePrefix: 'super-rentals',
     environment: environment,
+    firebase: 'https://vivid-inferno-3756.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
